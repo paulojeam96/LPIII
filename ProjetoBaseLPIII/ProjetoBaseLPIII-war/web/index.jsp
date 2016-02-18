@@ -19,7 +19,7 @@
                 <h1>Hello World!</h1>
             </c:when>
             <c:otherwise>
-                <h1>Hello ${username}!</h1>
+                <h1>Benvenuto, ${username}!</h1>
                 <p>qualquer coisa</p>
             </c:otherwise>
         </c:choose>

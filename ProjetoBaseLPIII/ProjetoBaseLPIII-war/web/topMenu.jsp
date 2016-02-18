@@ -26,7 +26,7 @@
                         </c:if>
                         <c:choose>
                             <c:when test="${username==null}">
-                                 <a href="login.jsp"><li class="${menuLogin}">Login</li></a>
+                                 <a href="home?command=User&action=cookies"><li class="${menuLogin}">Login</li></a>
                             </c:when>
                             <c:otherwise>
                                  <a href="home?command=User&action=logout"><li class="${menuLogin}">Logout</li></a>

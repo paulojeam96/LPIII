@@ -33,8 +33,8 @@ body{
     margin: 0;
 }
 
-.topMenu ul li:hover, .selectedMenu{
-    background-color: #09ACE3;
+.topMenu ul li:hover{
+    background-color: #000;
 }
 
 .topMenu ul a, .topMenu ul a:active, .topMenu ul a:visited{
