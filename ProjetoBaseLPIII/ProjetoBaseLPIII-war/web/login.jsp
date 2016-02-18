@@ -12,7 +12,13 @@
         <title>Projeto Base</title>
     </head>
     <body>
+        <c:set var="menu" scope="session" value="login"></c:set>
         <%@include file="topMenu.jsp" %>
+        
+        <p>${errormsg}</p>
+        
+        <c:set var="errormsg" scope="session" value=""></c:set>
+
         <h1>LOGIN</h1>
         
         <form method="POST" action="home">

@@ -22,7 +22,8 @@ public class UserCommand implements Command{
     @Override
     public void execute() {
         String action = request.getParameter("action");
-        
+        request.getSession().setAttribute("errormsg", "");
+
         switch(action){
             case "login":
                 String username = request.getParameter("username");
@@ -32,12 +33,18 @@ public class UserCommand implements Command{
                     returnPage = "index.jsp";
                     request.getSession().setAttribute("username", username);
                 } else{
+                    request.getSession().setAttribute("errormsg", "Usuario e senha inexistentes ou não conferem!");
                     returnPage = "login.jsp";
                 }
                 break;
             case "logout":
                 request.getSession().setAttribute("username",null);
                 returnPage = "index.jsp";
+                break;
+                
+            case "logerror":
+                request.getSession().setAttribute("errormsg", "Acesso Restrito! Você deve estar logado!");
+                returnPage = "login.jsp";
                 break;
         }
     }
