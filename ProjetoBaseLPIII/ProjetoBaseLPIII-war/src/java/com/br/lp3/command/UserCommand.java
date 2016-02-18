@@ -35,6 +35,10 @@ public class UserCommand implements Command{
                     returnPage = "login.jsp";
                 }
                 break;
+            case "logout":
+                request.getSession().setAttribute("username",null);
+                returnPage = "index.jsp";
+                break;
         }
     }
 

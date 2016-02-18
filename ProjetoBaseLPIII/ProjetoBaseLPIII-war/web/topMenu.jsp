@@ -22,7 +22,8 @@
                                 <a href="login.jsp"><li>Login</li></a>
                             </c:when>
                             <c:otherwise>
-                                    <a href="home?command=User&action=logout"><li>Logout</li></a>
+                                    <a href="home?command=User&action=logout
+                                       "><li>Logout</li></a>
                             </c:otherwise>
                         </c:choose>
 
