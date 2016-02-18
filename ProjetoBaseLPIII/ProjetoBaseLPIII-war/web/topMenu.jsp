@@ -4,6 +4,7 @@
     Author     : 31448471
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,7 +17,15 @@
             <ul>
                 <a href="index.jsp"><li>Home</li></a>
                 <a href="page 1.jsp"><li>Página 1</li></a>
-                <a href="login.jsp"><li>Login</li></a>
+                        <c:choose>
+                            <c:when test="${username==null}">
+                                <a href="login.jsp"><li>Login</li></a>
+                            </c:when>
+                            <c:otherwise>
+                                    <a href="home?command=User&action=logout"><li>Logout</li></a>
+                            </c:otherwise>
+                        </c:choose>
+
             </ul>
         </nav>
     </body>

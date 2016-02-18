@@ -30,6 +30,7 @@ public class UserCommand implements Command{
                 
                 if("paulo".equals(username) && "123".equals(password)){
                     returnPage = "index.jsp";
+                    request.getSession().setAttribute("username", username);
                 } else{
                     returnPage = "login.jsp";
                 }
