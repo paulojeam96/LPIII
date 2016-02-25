@@ -1,0 +1,31 @@
+Thu Feb 25 11:00:04 BRT 2016 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Thu Feb 25 11:00:05 BRT 2016:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-0153-18ba-bd53-000059c6420f
+no diretório de banco de dados C:\Temp\LPIII\ProjetoBaseLPIII\db\bancobase_lp3 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b26
+user.dir=C:\Temp\glassfish-4.1\glassfish4\javadb
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=C:\Temp\LPIII\ProjetoBaseLPIII\db
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Feb 25 11:00:11 BRT 2016:
+Encerrando a instância a816c00e-0153-18ba-bd53-000059c6420f
+Thu Feb 25 11:00:11 BRT 2016 Thread[DRDAConnThread_3,5,main] (DATABASE = bancobase_lp3), (DRDAID = {2}), Banco de dados 'bancobase_lp3' fechado.
+----------------------------------------------------------------
+Thu Feb 25 11:00:31 BRT 2016:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância 560740aa-0153-18ba-bd53-000059c6420f
+no diretório de banco de dados C:\Temp\LPIII\ProjetoBaseLPIII\db\bancobase_lp3 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b26
+user.dir=C:\Temp\glassfish-4.1\glassfish4\javadb
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=C:\Temp\LPIII\ProjetoBaseLPIII\db
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''

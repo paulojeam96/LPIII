@@ -1,5 +1,7 @@
 package com.br.lp3.command;
 
+import com.br.lp3.dao.UserLP3DAO;
+import com.br.lp3.entities.UserLP3;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -31,7 +33,10 @@ public class UserCommand implements Command{
                 String password = request.getParameter("password");
                 String check = request.getParameter("checkSave");
                 
-                if("paulo".equals(username) && "123".equals(password)){
+                UserLP3DAO dao = new UserLP3DAO();
+                UserLP3 user = dao.readByUsername(username);
+                
+                if(user != null && user.getPassword().equals(password)){
                     returnPage = "index.jsp";
                     request.getSession().setAttribute("username", username);
                     
